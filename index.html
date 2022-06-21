@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estacionamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="card mb-3" style="max-width: 960px;">
+        <div class="row g-0">
+            <div class="card-header">
+                <h1 style="text-align: center;">Controle de Estacionamento</h1>
+              </div>
+            <div class="col-md-3">
+                <img src="img/placa-estacionamento.png" class="img-fluid rounded-start" alt="Placa de Estacionamento">
+            </div>
+            <div class="col-md-9">
+                
+                <div class="card-body">
+                    <form class="row gy-2 gx-3 align-items-center">
+
+                        <div class="col-12">
+                            <label for="inputCliente" class="form-label">Cliente</label>
+                            <input type="text" class="form-control" id="inputCliente"
+                                placeholder="Informe o Nome do Cliente">
+                        </div>
+                        <div class="col-5">
+                            <label for="inputVeiculo" class="form-label">Veículo</label>
+                            <input type="text" class="form-control" id="inputVeiculo"
+                                placeholder="Informe o Nome do Veículo">
+                        </div>
+                        <div class="col-3">
+                            <label for="inputPlaca" class="form-label">Placa</label>
+                            <input type="text" class="form-control" id="inputPlaca"
+                                placeholder="Informe a Placa">
+                        </div>
+                        <div class="col-4">
+                            <label for="autoSizingSelect" class="form-label">Tipo de Cliente</label>
+                            <select class="form-select" id="autoSizingSelect">
+                                <option selected>Avulso</option>
+                                <option value="1">Diário</option>
+                                <option value="2">Semanal</option>
+                                <option value="3">Mensal</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <button id="cadastrar" type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 960px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Veículo</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="patio"></tbody>
+        </table>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
